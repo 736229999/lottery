@@ -25,6 +25,10 @@ func init() {
 	//修改密码
 	beego.Router("/ModifyPassword", &controllers.ModifyPasswordController{})
 
+
+	//获取新验证码
+	beego.Router("/getCaptcha", &controllers.YzmController{})
+
 	//---------------------------------------GameServer------------------------------------
 	//beego.Router("/RegistGameServer", &controllers.RegistGameServerController{})
 }

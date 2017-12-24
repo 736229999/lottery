@@ -41,30 +41,36 @@ func (o *Ctrl) Init() error {
 
 	data, err := json.Marshal(req)
 	if err != nil {
+		beego.Debug("data-------------",err)
 		return err
 	}
 
 	cipher, err := encmgr.Instance().RsaEnc(data)
 	if err != nil {
+		beego.Debug("cipher-------------",err)
 		return err
 	}
 
 	body := bytes.NewBuffer(cipher)
 
 	//发送注册消息
+	beego.Debug("conf.CtrlsrvIP",conf.CtrlsrvIP+"/srvRegist")
 	resp, err := httpmgr.Post(conf.CtrlsrvIP+"/srvRegist", body)
 	if err != nil {
+		beego.Debug("resp-------------",err)
 		return err
 	}
 
 	resp, err = encmgr.Instance().RsaDec(resp)
 	if err != nil {
+		beego.Debug("resp-------------",err)
 		return err
 	}
 
 	ret := RespSrvRegist{}
 	err = json.Unmarshal(resp, &ret)
 	if err != nil {
+		beego.Debug("ret-------------",err)
 		return err
 	}
 

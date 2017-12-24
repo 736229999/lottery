@@ -4,7 +4,9 @@ const (
 	//-----------------------------------------------正式服信息-------------------------------------------------------
 	//-----------------------------------------------Combodia 计算服 ----------------------------------------------------
 	//DbUrl_CalculationServer = "47.52.112.4:28018"
+	//CalculationDbUserName = "$Hy_Db_Calculation#520017*"
 	CalculationDbUserName = "$Hy_Db_Calculation#520017*"
+	//CalculationDbPwd      = "h657YHG&^*rH&*psz1/F6"
 	CalculationDbPwd      = "h657YHG&^*rH&*psz1/F6"
 	//计算服DbNmae
 	CalculationDbName = "CalculationServer"

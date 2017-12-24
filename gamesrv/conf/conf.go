@@ -45,16 +45,16 @@ nVmMHBlxlD7m0cq4X4PkDBHLS3uUvv0fdvETspRPRF/EMShez0kx
 `)
 
 //RSA 暗号
-var RsaCipher = []byte("Manners Makyth man ! , 不知礼 无以立也 !")
+var RsaCipher = []byte("天王盖地虎")
 
 //AES 暗号
-var AesCipher = []byte("May the force be with you !")
+var AesCipher = []byte("宝塔镇河妖")
 
 //ctrlsrv IP(由于启动的时候必须从控制服务获取信息,所以这个只有再在每个服务器代码中写死,等项目空闲时改为加密配置文件的形式)
 //var CtrlsrvIP = "http://192.168.1.182:8877"
 
 //线上
-var CtrlsrvIP = "http://47.52.118.161:8877"
+var CtrlsrvIP = "http://192.168.1.151:8877"
 
 //超时时间
 var Timeout = "10s"

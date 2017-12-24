@@ -1,245 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="70ee506c-32af-445c-8775-82b2b2b1d005" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/apisrv/apisrv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/apisrv/conf/app.conf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/apisrv/conf/conf.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/apisrv/controllers/GetLtryHist.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/apisrv/controllers/GetLtryHistByDay.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/apisrv/controllers/GetLtryHistByExpect.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/apisrv/controllers/GetLtryNewestRecord.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/apisrv/controllers/InitLtry.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/apisrv/controllers/StartLtry.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/apisrv/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/apisrv/models/apimgr/apimgr.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/apisrv/models/apimgr/conf.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/apisrv/models/ctrl/ctrl.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/apisrv/models/dbmgr/dbconf.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/apisrv/models/dbmgr/dbmgr.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/apisrv/models/encmgr/encmgr.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/apisrv/models/histmgr/histmgr.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/apisrv/models/ltry/hk6/hk6.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/apisrv/models/ltrymgr/ltry.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/apisrv/models/ltrymgr/ltrymgr.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/apisrv/models/manltrymgr/manltryif.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/apisrv/models/manltrymgr/manltrymgr.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/apisrv/routers/router.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/calculsrv/calculsrv.exe" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/calculsrv/conf/app.conf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/calculsrv/conf/conf.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/calculsrv/controllers/IntelligentTrack.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/calculsrv/controllers/UpdateLtryInfo.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/calculsrv/controllers/UpdateLtrySet.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/calculsrv/controllers/ltryBet.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/calculsrv/controllers/manltry.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/calculsrv/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/calculsrv/models/BalanceRecordMgr/BalanceRecordMgr.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/calculsrv/models/BetManger/BetManager.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/calculsrv/models/HistoryManager/DataStructure.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/calculsrv/models/HistoryManager/HistoryManager.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/calculsrv/models/IntelligentTrackBettingMgr/IntelligentTrackBettingMgr.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/calculsrv/models/LotteryTypes/CommonFunc/CommonFunc.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/calculsrv/models/LotteryTypes/EX5/DataStructure.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/calculsrv/models/LotteryTypes/EX5/EX5.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/calculsrv/models/LotteryTypes/EX5/EX5_Special.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/calculsrv/models/LotteryTypes/EX5/EX5_Special_test.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/calculsrv/models/LotteryTypes/HK6/DataStructure.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/calculsrv/models/LotteryTypes/HK6/HK6.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/calculsrv/models/LotteryTypes/HK6/HK6_Special.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/calculsrv/models/LotteryTypes/K3/DataStructure.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/calculsrv/models/LotteryTypes/K3/K3.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/calculsrv/models/LotteryTypes/K3/K3_Special.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/calculsrv/models/LotteryTypes/K3/K3_Special_test.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/calculsrv/models/LotteryTypes/PK10/DataStructure.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/calculsrv/models/LotteryTypes/PK10/PK10.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/calculsrv/models/LotteryTypes/PK10/PK10_Special.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/calculsrv/models/LotteryTypes/PL3/DataStructure.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/calculsrv/models/LotteryTypes/PL3/PL3.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/calculsrv/models/LotteryTypes/PL3/PL3_Special.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/calculsrv/models/LotteryTypes/PL3/PL3_Special_test.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/calculsrv/models/LotteryTypes/SSC/DataStructure.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/calculsrv/models/LotteryTypes/SSC/SSC.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/calculsrv/models/LotteryTypes/SSC/SSC_Special.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/calculsrv/models/LotteryTypes/SSC/SSC_Special_test.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/calculsrv/models/LotteryTypes/bj28/bj28.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/calculsrv/models/LotteryTypes/bj28/bj28_special.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/calculsrv/models/LotteryTypes/bj28/bj28_special_test.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/calculsrv/models/LotteryTypes/bj28/ds.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/calculsrv/models/Order/Order.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/calculsrv/models/RechargeMgr/RechargeMgr.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/calculsrv/models/acmgr/acmgr.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/calculsrv/models/apimgr/Config.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/calculsrv/models/apimgr/Const.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/calculsrv/models/apimgr/apimgr.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/calculsrv/models/ctrl/ctrl.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/calculsrv/models/dbmgr/CalculationDbOperation.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/calculsrv/models/dbmgr/CalculationDbOperation_test.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/calculsrv/models/dbmgr/DbConfig.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/calculsrv/models/dbmgr/ManageDbOperation.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/calculsrv/models/dbmgr/ManageDbOperation_test.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/calculsrv/models/dbmgr/dbmgr.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/calculsrv/models/encmgr/encmgr.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/calculsrv/models/gamemgr/gamemgr.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/calculsrv/models/gb/const.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/calculsrv/models/gb/ds.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/calculsrv/models/ind/ind.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/calculsrv/models/ltrymgr/ltlryif.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/calculsrv/models/ltrymgr/ltrymgr.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/calculsrv/models/ltryset/LotterySettings.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/calculsrv/routers/router.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/common/Const.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/common/encrypt/aes.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/common/encrypt/rsa.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/common/httpmgr/msg.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/common/utils/JsonTime.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/common/utils/ToolFunc.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/common/utils/ltry.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/common/utils/time.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/common/utils/utils.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ctrlsrv/conf/app.conf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ctrlsrv/conf/conf.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ctrlsrv/controllers/getDependSrv.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ctrlsrv/controllers/getLtryInfo.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ctrlsrv/controllers/srvRegist.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ctrlsrv/ctrlsrv.exe" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ctrlsrv/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ctrlsrv/models/dbmgr/dbconf.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ctrlsrv/models/dbmgr/dbmgr.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ctrlsrv/models/encmgr/encmgr.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ctrlsrv/models/ltrymgr/ltrymgr.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ctrlsrv/models/srvmgr/srvmgr.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ctrlsrv/routers/router.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/gamesrv/conf/app.conf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/gamesrv/conf/conf.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/gamesrv/controllers/BankTransferRecharge.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/gamesrv/controllers/CancelBankWithdrawals.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/gamesrv/controllers/ChangeInviteCodeInfo.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/gamesrv/controllers/ChangeRechargeChannels.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/gamesrv/controllers/CheckGameSrvStatus.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/gamesrv/controllers/CreateInviteCode.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/gamesrv/controllers/GetAccountInfo.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/gamesrv/controllers/GetActivity.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/gamesrv/controllers/GetAgentReport.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/gamesrv/controllers/GetAnnouncement.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/gamesrv/controllers/GetDrawingsRecord.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/gamesrv/controllers/GetInspectMoney.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/gamesrv/controllers/GetInviteCodeInfo.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/gamesrv/controllers/GetInviteCodeLowerNum.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/gamesrv/controllers/GetLotteriesSettings.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/gamesrv/controllers/GetLotteryInfo.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/gamesrv/controllers/GetLotteryRecord.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/gamesrv/controllers/GetLotteryStateWithGameName.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/gamesrv/controllers/GetLowerAgentAndUser.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/gamesrv/controllers/GetLowerInfo.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/gamesrv/controllers/GetNewestWinning.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/gamesrv/controllers/GetOrderInfo.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/gamesrv/controllers/GetOrderInfoByDay.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/gamesrv/controllers/GetOrderInfoByGameTag.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/gamesrv/controllers/GetQrCode.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/gamesrv/controllers/GetRechargeChannels.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/gamesrv/controllers/GetRechargeRecord.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/gamesrv/controllers/IntelligentTrack.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/gamesrv/controllers/LotteryBetting.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/gamesrv/controllers/ModifyAdditionalInfo.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/gamesrv/controllers/ModifyMoneyPassword.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/gamesrv/controllers/ModifyPassword.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/gamesrv/controllers/PrePlayer.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/gamesrv/controllers/QrCodeTransferRecharge.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/gamesrv/controllers/RegistCalculation.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/gamesrv/controllers/UpdataLotterySettings.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/gamesrv/controllers/UpdateActivity.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/gamesrv/controllers/UpdateAnnouncement.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/gamesrv/controllers/UpdateLotteryInfo.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/gamesrv/controllers/UpdateLotteryRecord.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/gamesrv/controllers/UpdateQrCode.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/gamesrv/controllers/UpdateRecordForLostExpect.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/gamesrv/controllers/UserRequestBankWithdrawals.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/gamesrv/gamesrv.exe" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/gamesrv/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/gamesrv/models/AccountMgr/AccountMgr.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/gamesrv/models/ActivityMgr/ActivityMgr.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/gamesrv/models/ActivityMgr/ActivityMgr_test.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/gamesrv/models/AnnouncementMgr/AnnouncementMgr.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/gamesrv/models/DataCenter/DataCenter.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/gamesrv/models/DbHandle/DbHandle.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/gamesrv/models/GlobalData/GlobalData.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/gamesrv/models/LotteryManager/DataStructure.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/gamesrv/models/LotteryManager/LotteryInfo.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/gamesrv/models/LotteryManager/LotteryManager.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/gamesrv/models/LotterySettings/LotterySettings.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/gamesrv/models/Order/Order.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/gamesrv/models/QrCodeMgr/QrCodeMgr.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/gamesrv/models/RechargeMgr/RechargeMgr.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/gamesrv/models/Utils/Utils.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/gamesrv/models/ctrl/ctrl.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/gamesrv/models/dbmgr/dbconf.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/gamesrv/models/dbmgr/dbmgr.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/gamesrv/models/encmgr/encmgr.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/gamesrv/routers/router.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/indsrv/conf/app.conf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/indsrv/controllers/GetHist.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/indsrv/controllers/GetRecordByExpect.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/indsrv/controllers/GetRecordByNew.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/indsrv/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/indsrv/models/ctrl/ctrl.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/indsrv/models/dbmgr/dbconf.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/indsrv/models/dbmgr/dbmgr.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/indsrv/models/encmgr/encmgr.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/indsrv/models/indltry/pk10/pk10.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/indsrv/models/indltry/pk10/pk10_test.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/indsrv/models/ltrymgr/ltryif.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/indsrv/models/ltrymgr/ltrymgr.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/indsrv/models/rd/rd.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/indsrv/models/scy/scy.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/indsrv/routers/router.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/loginsrv/conf/app.conf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/loginsrv/conf/conf.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/loginsrv/conf/fonts/3Dumb.ttf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/loginsrv/conf/fonts/ApothecaryFont.ttf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/loginsrv/conf/fonts/Comismsh.ttf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/loginsrv/conf/fonts/D3Parallelism.ttf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/loginsrv/conf/fonts/DENNEthree-dee.ttf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/loginsrv/conf/fonts/DeborahFancyDress.ttf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/loginsrv/conf/fonts/Esquisito.ttf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/loginsrv/conf/fonts/Flim-Flam.ttf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/loginsrv/conf/fonts/KREMLINGEORGIANI3D.ttf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/loginsrv/conf/fonts/actionj.ttf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/loginsrv/conf/fonts/chromohv.ttf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/loginsrv/controllers/CaptchaController.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/loginsrv/controllers/GetGameIpController.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/loginsrv/controllers/LoginController.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/loginsrv/controllers/ModifyPasswordController.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/loginsrv/controllers/RegistController.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/loginsrv/controllers/RegistGameServerController.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/loginsrv/loginsrv.exe" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/loginsrv/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/loginsrv/models/AccountMgr/AccountMgr.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/loginsrv/models/DbHandle/Data.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/loginsrv/models/DbHandle/Handle.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/loginsrv/models/GlobalData/GlobalData.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/loginsrv/models/Login/Captcha.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/loginsrv/models/Login/Data.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/loginsrv/models/Login/Login.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/loginsrv/models/Utils/Util.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/loginsrv/models/ctrl/ctrl.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/loginsrv/models/dbmgr/dbconf.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/loginsrv/models/dbmgr/dbmgr.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/loginsrv/models/dbmgr/dbservice.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/loginsrv/models/encmgr/encmgr.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/loginsrv/routers/router.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/testsrv/conf/app.conf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/testsrv/controllers/object.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/testsrv/controllers/user.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/testsrv/lastupdate.tmp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/testsrv/main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/testsrv/models/object.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/testsrv/models/ticket.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/testsrv/models/user.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/testsrv/routers/commentsRouter________________Work_Lottery_Server_src_testsrv_controllers.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/testsrv/routers/router.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/testsrv/tests/default_test.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/testsrv/testsrv" />
+    <list default="true" id="aec84a8a-c773-4a88-8fa6-4e5aec628a8a" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/loginsrv/models/Login/Captcha_dj.go" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/calculsrv/calculsrv.exe" afterPath="$PROJECT_DIR$/calculsrv/calculsrv.exe" />
+      <change beforePath="$PROJECT_DIR$/ctrlsrv/controllers/srvRegist.go" afterPath="$PROJECT_DIR$/ctrlsrv/controllers/srvRegist.go" />
+      <change beforePath="$PROJECT_DIR$/ctrlsrv/ctrlsrv.exe" afterPath="$PROJECT_DIR$/ctrlsrv/ctrlsrv.exe" />
+      <change beforePath="$PROJECT_DIR$/ctrlsrv/main.go" afterPath="$PROJECT_DIR$/ctrlsrv/main.go" />
+      <change beforePath="$PROJECT_DIR$/gamesrv/conf/conf.go" afterPath="$PROJECT_DIR$/gamesrv/conf/conf.go" />
+      <change beforePath="$PROJECT_DIR$/gamesrv/gamesrv.exe" afterPath="$PROJECT_DIR$/gamesrv/gamesrv.exe" />
+      <change beforePath="$PROJECT_DIR$/gamesrv/main.go" afterPath="$PROJECT_DIR$/gamesrv/main.go" />
+      <change beforePath="$PROJECT_DIR$/gamesrv/models/ctrl/ctrl.go" afterPath="$PROJECT_DIR$/gamesrv/models/ctrl/ctrl.go" />
+      <change beforePath="$PROJECT_DIR$/gamesrv/models/dbmgr/dbconf.go" afterPath="$PROJECT_DIR$/gamesrv/models/dbmgr/dbconf.go" />
+      <change beforePath="$PROJECT_DIR$/loginsrv/controllers/CaptchaController.go" afterPath="$PROJECT_DIR$/loginsrv/controllers/CaptchaController.go" />
+      <change beforePath="$PROJECT_DIR$/loginsrv/controllers/RegistController.go" afterPath="$PROJECT_DIR$/loginsrv/controllers/RegistController.go" />
+      <change beforePath="$PROJECT_DIR$/loginsrv/loginsrv.exe" afterPath="$PROJECT_DIR$/loginsrv/loginsrv.exe" />
+      <change beforePath="$PROJECT_DIR$/loginsrv/main.go" afterPath="$PROJECT_DIR$/loginsrv/main.go" />
+      <change beforePath="$PROJECT_DIR$/loginsrv/models/DbHandle/Handle.go" afterPath="$PROJECT_DIR$/loginsrv/models/DbHandle/Handle.go" />
+      <change beforePath="$PROJECT_DIR$/loginsrv/models/Login/Captcha.go" afterPath="$PROJECT_DIR$/loginsrv/models/Login/Captcha.go" />
+      <change beforePath="$PROJECT_DIR$/loginsrv/models/Login/Data.go" afterPath="$PROJECT_DIR$/loginsrv/models/Login/Data.go" />
+      <change beforePath="$PROJECT_DIR$/loginsrv/models/ctrl/ctrl.go" afterPath="$PROJECT_DIR$/loginsrv/models/ctrl/ctrl.go" />
+      <change beforePath="$PROJECT_DIR$/loginsrv/models/dbmgr/dbmgr.go" afterPath="$PROJECT_DIR$/loginsrv/models/dbmgr/dbmgr.go" />
+      <change beforePath="$PROJECT_DIR$/loginsrv/routers/router.go" afterPath="$PROJECT_DIR$/loginsrv/routers/router.go" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -250,61 +34,107 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main.go" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/loginsrv/main.go">
+      <file leaf-file-name="router.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/loginsrv/routers/router.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="59" column="30" lean-forward="false" selection-start-line="59" selection-start-column="30" selection-end-line="59" selection-end-column="30" />
+            <state relative-caret-position="0">
+              <caret line="21" column="52" lean-forward="false" selection-start-line="21" selection-start-column="52" selection-end-line="21" selection-end-column="52" />
+              <folding>
+                <element signature="e#301#364#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RegistController.go" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/loginsrv/controllers/RegistController.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="346">
+              <caret line="82" column="43" lean-forward="true" selection-start-line="82" selection-start-column="43" selection-end-line="82" selection-end-column="43" />
+              <folding>
+                <element signature="e#21#236#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Handle.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/loginsrv/models/DbHandle/Handle.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="890">
+              <caret line="75" column="143" lean-forward="true" selection-start-line="75" selection-start-column="143" selection-end-line="75" selection-end-column="143" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dbmgr.go" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/loginsrv/models/dbmgr/dbmgr.go">
+      <file leaf-file-name="session.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../go/src/gopkg.in/mgo.v2/session.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="2112" column="21" lean-forward="false" selection-start-line="2112" selection-start-column="21" selection-end-line="2112" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GlobalData.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/loginsrv/models/GlobalData/GlobalData.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="470">
+              <caret line="23" column="5" lean-forward="false" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="output.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../go/src/github.com/astaxie/beego/context/output.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="61" column="21" lean-forward="false" selection-start-line="61" selection-start-column="21" selection-end-line="61" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Data.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/loginsrv/models/Login/Data.go">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="307">
-              <caret line="29" column="16" lean-forward="false" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
+              <caret line="51" column="7" lean-forward="false" selection-start-line="51" selection-start-column="7" selection-end-line="51" selection-end-column="7" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dbconf.go" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ctrlsrv/models/dbmgr/dbconf.go">
+      <file leaf-file-name="YzmController.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/loginsrv/controllers/YzmController.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="5" column="30" lean-forward="false" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="30" />
+            <state relative-caret-position="721">
+              <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+              <folding>
+                <element signature="e#21#136#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="captcha.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../go/src/github.com/mojocn/base64Captcha/captcha.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="307">
+              <caret line="91" column="5" lean-forward="false" selection-start-line="91" selection-start-column="5" selection-end-line="91" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dbconf.go" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/loginsrv/models/dbmgr/dbconf.go">
+      <file leaf-file-name="store.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../go/src/github.com/mojocn/base64Captcha/store.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="24" column="39" lean-forward="false" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ctrl.go" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/loginsrv/models/ctrl/ctrl.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="441">
-              <caret line="32" column="15" lean-forward="false" selection-start-line="32" selection-start-column="15" selection-end-line="32" selection-end-column="15" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="conf.go" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/loginsrv/conf/conf.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="672">
-              <caret line="56" column="39" lean-forward="false" selection-start-line="56" selection-start-column="39" selection-end-line="56" selection-end-column="39" />
+            <state relative-caret-position="315">
+              <caret line="31" column="4" lean-forward="false" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -312,23 +142,67 @@
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>GetGameIp</find>
+      <find>8089</find>
+      <find>VerifyInfo</find>
+      <find>font</find>
+      <find>DefaultLen</find>
+      <find>freetype</find>
+      <find>ReadTimeout</find>
+      <find>WriteTimeout</find>
+      <find>Ctx.Output</find>
+      <find>ImageFormatJpeg</find>
+      <find>digits</find>
+      <find>id</find>
+      <find>demoCodeCaptchaCreate</find>
+      <find>ConfigJsonBody</find>
+      <find>reqCaptcha.Flag</find>
+      <find>respLogin</find>
+    </findStrings>
+    <dirStrings>
+      <dir>D:\Work_time\lottery\src\loginsrv</dir>
+      <dir>D:\Work_time\lottery\src</dir>
+      <dir>D:\Work_time\lottery\src\gamesrv</dir>
+      <dir>D:\Work_time\go\src</dir>
+    </dirStrings>
+  </component>
   <component name="GOROOT" path="E:/Go1.9.1" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GoLibraries">
-    <option name="urls">
-      <list>
-        <option value="file://$PROJECT_DIR$/.." />
-        <option value="file://$PROJECT_DIR$/../../go" />
-      </list>
-    </option>
-  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/loginsrv/models/dbmgr/dbconf.go" />
-        <option value="$PROJECT_DIR$/loginsrv/conf/conf.go" />
+        <option value="$PROJECT_DIR$/ctrlsrv/controllers/srvRegist.go" />
+        <option value="$PROJECT_DIR$/gamesrv/models/ctrl/ctrl.go" />
+        <option value="$PROJECT_DIR$/gamesrv/main.go" />
+        <option value="$PROJECT_DIR$/gamesrv/conf/conf.go" />
+        <option value="$PROJECT_DIR$/loginsrv/models/DbHandle/Handle.go" />
+        <option value="$PROJECT_DIR$/loginsrv/models/ctrl/ctrl.go" />
+        <option value="$PROJECT_DIR$/loginsrv/models/encmgr/encmgr.go" />
+        <option value="$PROJECT_DIR$/loginsrv/models/dbmgr/dbmgr.go" />
+        <option value="$PROJECT_DIR$/ctrlsrv/main.go" />
+        <option value="$PROJECT_DIR$/../../go/src/github.com/lifei6671/gocaptcha/captcha.go" />
+        <option value="$PROJECT_DIR$/../../go/src/github.com/dchest/captcha/captcha.go" />
+        <option value="$PROJECT_DIR$/../../go/src/github.com/dchest/captcha/random.go" />
+        <option value="$PROJECT_DIR$/loginsrv/models/Login/Data.go" />
+        <option value="$PROJECT_DIR$/loginsrv/models/Login/Captcha.go" />
+        <option value="$PROJECT_DIR$/loginsrv/controllers/CaptchaController.go" />
+        <option value="$PROJECT_DIR$/../../go/src/github.com/golang/freetype/freetype.go" />
+        <option value="$PROJECT_DIR$/loginsrv/main.go" />
+        <option value="$PROJECT_DIR$/loginsrv/routers/router.go" />
+        <option value="$PROJECT_DIR$/loginsrv/controllers/YzmController.go" />
+        <option value="$PROJECT_DIR$/loginsrv/models/Login/Captcha_dj.go" />
+        <option value="$PROJECT_DIR$/loginsrv/controllers/RegistController.go" />
       </list>
     </option>
   </component>
@@ -339,10 +213,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="154" />
-    <option name="y" value="6" />
-    <option name="width" value="1400" />
-    <option name="height" value="1000" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -360,7 +234,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -372,31 +245,13 @@
             <path>
               <item name="src" type="b2602c69:ProjectViewProjectNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="ctrlsrv" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="src" type="b2602c69:ProjectViewProjectNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="ctrlsrv" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="src" type="b2602c69:ProjectViewProjectNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="ctrlsrv" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-              <item name="dbmgr" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="src" type="b2602c69:ProjectViewProjectNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="loginsrv" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="src" type="b2602c69:ProjectViewProjectNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="loginsrv" type="462c0819:PsiDirectoryNode" />
-              <item name="conf" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="src" type="b2602c69:ProjectViewProjectNode" />
@@ -409,28 +264,44 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="loginsrv" type="462c0819:PsiDirectoryNode" />
               <item name="models" type="462c0819:PsiDirectoryNode" />
-              <item name="ctrl" type="462c0819:PsiDirectoryNode" />
+              <item name="DbHandle" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="src" type="b2602c69:ProjectViewProjectNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="loginsrv" type="462c0819:PsiDirectoryNode" />
               <item name="models" type="462c0819:PsiDirectoryNode" />
-              <item name="dbmgr" type="462c0819:PsiDirectoryNode" />
+              <item name="GlobalData" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="src" type="b2602c69:ProjectViewProjectNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="loginsrv" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+              <item name="Login" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="src" type="b2602c69:ProjectViewProjectNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="loginsrv" type="462c0819:PsiDirectoryNode" />
+              <item name="routers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="src" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="go.sdk.automatically.set" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.goide.configuration.GoLibrariesConfigurableProvider" />
-    <property name="configurable.Global.GOPATH.is.expanded" value="true" />
-    <property name="configurable.Project.GOPATH.is.expanded" value="true" />
-    <property name="configurable.Module.GOPATH.is.expanded" value="false" />
+    <property name="last_opened_file_path" value="$USER_HOME$" />
+    <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -444,7 +315,15 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Go Build.go build main.go (1)">
+    <configuration name="go build main.go (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true">
+      <module name="src" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <go_parameters value="-i" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/ctrlsrv/main.go" />
+      <directory value="$PROJECT_DIR$/" />
+    </configuration>
     <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true">
       <module name="src" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -453,16 +332,14 @@
       <filePath value="$PROJECT_DIR$/loginsrv/main.go" />
       <directory value="$PROJECT_DIR$/" />
     </configuration>
-    <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
-      <module name="src" />
-      <working_directory value="$PROJECT_DIR$/" />
-      <go_parameters value="-i" />
-      <framework value="gotest" />
-      <kind value="DIRECTORY" />
-    </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Go Build.go build main.go" />
+      <item index="1" class="java.lang.String" itemvalue="Go Build.go build main.go (1)" />
+    </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Go Build.go build main.go" />
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="Go Build.go build main.go (1)" />
+        <item index="1" class="java.lang.String" itemvalue="Go Build.go build main.go" />
       </list>
     </recent_temporary>
   </component>
@@ -475,21 +352,21 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.175" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32955715" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3285273" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39958805" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32921812" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32955715" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -499,144 +376,344 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="3" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/loginsrv/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ctrlsrv/models/dbmgr/dbconf.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="30" lean-forward="false" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/loginsrv/models/dbmgr/dbconf.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="23" column="33" lean-forward="false" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ctrlsrv/models/dbmgr/dbmgr.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="39" column="31" lean-forward="false" selection-start-line="39" selection-start-column="31" selection-end-line="39" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/Go1.9.1/src/crypto/rsa/pkcs1v15.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="31" column="63" lean-forward="true" selection-start-line="31" selection-start-column="63" selection-end-line="31" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/encrypt/aes.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="17" column="5" lean-forward="false" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/loginsrv/models/dbmgr/dbservice.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gamesrv/models/dbmgr/dbconf.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="30" column="46" lean-forward="true" selection-start-line="30" selection-start-column="46" selection-end-line="30" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/encrypt/rsa.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="673">
-          <caret line="42" column="25" lean-forward="false" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/Go1.9.1/src/encoding/json/encode.go">
+    <entry file="file://$PROJECT_DIR$/../../go/src/github.com/astaxie/beego/controller.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
-          <caret line="158" column="5" lean-forward="false" selection-start-line="158" selection-start-column="5" selection-end-line="158" selection-end-column="5" />
-          <folding />
+          <caret line="68" column="21" lean-forward="false" selection-start-line="68" selection-start-column="21" selection-end-line="68" selection-end-column="21" />
         </state>
       </provider>
     </entry>
+    <entry file="file://E:/Go1.9.1/src/encoding/json/decode.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="95" column="14" lean-forward="false" selection-start-line="95" selection-start-column="7" selection-end-line="95" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../go/src/github.com/astaxie/beego/context/input.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="44" column="5" lean-forward="false" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/Go1.9.1/src/image/image.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="915" column="5" lean-forward="false" selection-start-line="915" selection-start-column="5" selection-end-line="915" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../go/src/github.com/dchest/captcha/image.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="26" column="12" lean-forward="true" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../go/src/github.com/astaxie/beego/log.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="53" column="5" lean-forward="false" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/beego-captcha/main.go" />
+    <entry file="file://$PROJECT_DIR$/beego-captcha/views/index.tpl" />
+    <entry file="file://$PROJECT_DIR$/beego-captcha/views/login.tpl" />
+    <entry file="file://$PROJECT_DIR$/beego-captcha/routers/router.go" />
+    <entry file="file://$PROJECT_DIR$/beego-captcha/controllers/base.go" />
+    <entry file="file://$PROJECT_DIR$/beego-captcha/controllers/captcha.go" />
     <entry file="file://$PROJECT_DIR$/ctrlsrv/main.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="14" column="16" lean-forward="false" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+        <state relative-caret-position="150">
+          <caret line="14" column="97" lean-forward="false" selection-start-line="14" selection-start-column="97" selection-end-line="14" selection-end-column="97" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/loginsrv/models/encmgr/encmgr.go">
+    <entry file="file://$PROJECT_DIR$/../../go/src/github.com/dchest/captcha/random.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="59" column="35" lean-forward="false" selection-start-line="59" selection-start-column="35" selection-end-line="59" selection-end-column="35" />
-          <folding />
+        <state relative-caret-position="340">
+          <caret line="59" column="21" lean-forward="false" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ctrlsrv/models/dbmgr/dbconf.go">
+    <entry file="file://$PROJECT_DIR$/../../go/src/github.com/dchest/captcha/captcha.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="30" lean-forward="false" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="30" />
-          <folding />
+        <state relative-caret-position="365">
+          <caret line="86" column="30" lean-forward="true" selection-start-line="86" selection-start-column="30" selection-end-line="86" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/loginsrv/models/dbmgr/dbconf.go">
+    <entry file="file://$PROJECT_DIR$/../../go/src/github.com/astaxie/beego/context/context.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="24" column="39" lean-forward="false" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
-          <folding />
+        <state relative-caret-position="315">
+          <caret line="50" column="5" lean-forward="false" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/loginsrv/models/ctrl/ctrl.go">
+    <entry file="file://E:/Go1.9.1/src/net/http/server.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="32" column="15" lean-forward="false" selection-start-line="32" selection-start-column="15" selection-end-line="32" selection-end-column="15" />
-          <folding />
+        <state relative-caret-position="315">
+          <caret line="81" column="5" lean-forward="false" selection-start-line="81" selection-start-column="5" selection-end-line="81" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/loginsrv/conf/conf.go">
+    <entry file="file://$PROJECT_DIR$/../../go/src/github.com/dchest/captcha/server.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="672">
-          <caret line="56" column="39" lean-forward="false" selection-start-line="56" selection-start-column="39" selection-end-line="56" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/loginsrv/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="59" column="30" lean-forward="false" selection-start-line="59" selection-start-column="30" selection-end-line="59" selection-end-column="30" />
-          <folding />
+        <state relative-caret-position="315">
+          <caret line="41" column="47" lean-forward="false" selection-start-line="41" selection-start-column="47" selection-end-line="41" selection-end-column="47" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/loginsrv/models/dbmgr/dbmgr.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
+        <state relative-caret-position="-360">
           <caret line="29" column="16" lean-forward="false" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/loginsrv/models/ctrl/ctrl.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="38" column="15" lean-forward="false" selection-start-line="38" selection-start-column="15" selection-end-line="38" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../go/src/github.com/astaxie/beego/session/session.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="118" column="48" lean-forward="false" selection-start-line="118" selection-start-column="48" selection-end-line="118" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../go/src/github.com/golang/freetype/raster/raster.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="670">
+          <caret line="596" column="5" lean-forward="false" selection-start-line="596" selection-start-column="5" selection-end-line="596" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../go/src/github.com/golang/freetype/truetype/truetype.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="632">
+          <caret line="295" column="25" lean-forward="false" selection-start-line="295" selection-start-column="15" selection-end-line="295" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../go/src/github.com/golang/freetype/mfreetype.go" />
+    <entry file="file://$PROJECT_DIR$/../../go/src/github.com/golang/freetype/freetype.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="43" column="1" lean-forward="true" selection-start-line="43" selection-start-column="1" selection-end-line="43" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/loginsrv/models/dbmgr/dbconf.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/loginsrv/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../go/src/github.com/mojocn/base64Captcha/engineAudio.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="5" lean-forward="false" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/Go1.9.1/src/bytes/buffer.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="51" column="17" lean-forward="false" selection-start-line="51" selection-start-column="17" selection-end-line="51" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../go/src/github.com/mojocn/base64Captcha/siprng.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="245" column="9" lean-forward="false" selection-start-line="245" selection-start-column="9" selection-end-line="245" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/Go1.9.1/src/bufio/bufio_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="99" column="12" lean-forward="false" selection-start-line="99" selection-start-column="12" selection-end-line="99" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../go/src/github.com/lifei6671/gocaptcha/captcha.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="87" column="26" lean-forward="false" selection-start-line="87" selection-start-column="26" selection-end-line="87" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/Go1.9.1/src/builtin/builtin.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2400">
+          <caret line="96" column="6" lean-forward="false" selection-start-line="96" selection-start-column="6" selection-end-line="96" selection-end-column="6" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../go/src/github.com/mojocn/base64Captcha/const.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="800">
+          <caret line="32" column="4" lean-forward="false" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/Go1.9.1/src/strings/strings.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="604" column="5" lean-forward="false" selection-start-line="604" selection-start-column="5" selection-end-line="604" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/loginsrv/routers/router.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="21" column="52" lean-forward="false" selection-start-line="21" selection-start-column="52" selection-end-line="21" selection-end-column="52" />
+          <folding>
+            <element signature="e#301#364#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../go/src/github.com/mojocn/base64Captcha/engineImageDigit.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="27" column="5" lean-forward="false" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../go/src/github.com/mojocn/base64Captcha/engineImageChar.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="367" column="9" lean-forward="false" selection-start-line="367" selection-start-column="9" selection-end-line="367" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/loginsrv/models/Login/Captcha.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-154">
+          <caret line="11" column="5" lean-forward="false" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/loginsrv/controllers/CaptchaController.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="33" column="27" lean-forward="false" selection-start-line="33" selection-start-column="27" selection-end-line="33" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../go/src/github.com/mojocn/base64Captcha/captcha.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="91" column="5" lean-forward="false" selection-start-line="91" selection-start-column="5" selection-end-line="91" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/loginsrv/models/Login/Captcha_dj.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../go/src/github.com/mojocn/base64Captcha/store.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="31" column="4" lean-forward="false" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/loginsrv/controllers/YzmController.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="721">
+          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding>
+            <element signature="e#21#136#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/loginsrv/models/Login/Data.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="51" column="7" lean-forward="false" selection-start-line="51" selection-start-column="7" selection-end-line="51" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/Go1.9.1/src/encoding/json/encode.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="160" column="17" lean-forward="true" selection-start-line="160" selection-start-column="17" selection-end-line="160" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../go/src/github.com/astaxie/beego/context/output.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="61" column="21" lean-forward="false" selection-start-line="61" selection-start-column="21" selection-end-line="61" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/loginsrv/models/GlobalData/GlobalData.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="470">
+          <caret line="23" column="5" lean-forward="false" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../go/src/gopkg.in/mgo.v2/session.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="2112" column="21" lean-forward="false" selection-start-line="2112" selection-start-column="21" selection-end-line="2112" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/loginsrv/models/DbHandle/Handle.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="890">
+          <caret line="75" column="143" lean-forward="true" selection-start-line="75" selection-start-column="143" selection-end-line="75" selection-end-column="143" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/loginsrv/controllers/RegistController.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="82" column="43" lean-forward="true" selection-start-line="82" selection-start-column="43" selection-end-line="82" selection-end-column="43" />
+          <folding>
+            <element signature="e#21#236#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

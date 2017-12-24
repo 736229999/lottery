@@ -2,7 +2,7 @@ package controllers
 
 import (
 	"encoding/json"
-	"strings"
+	//"strings"
 	"time"
 
 	"loginsrv/models/DbHandle"
@@ -11,6 +11,7 @@ import (
 	"loginsrv/models/ctrl"
 
 	"github.com/astaxie/beego"
+	"github.com/mojocn/base64Captcha"
 )
 
 type RegistController struct {
@@ -18,6 +19,7 @@ type RegistController struct {
 }
 
 func (o *RegistController) Post() {
+	beego.Debug("注册验证码------------------------注册验证码")
 	reqRegist := &Login.ReqRegist{}
 	respLogin := &Login.RespLogin{}
 	err := json.Unmarshal(o.Ctx.Input.RequestBody, reqRegist)
@@ -25,7 +27,6 @@ func (o *RegistController) Post() {
 		beego.Error("--- Marshal Error : ", err)
 		return
 	}
-
 	if ctrl.SelfSrv.Type == 1 {
 		if reqRegist.AccountType != 1 {
 			return
@@ -57,6 +58,7 @@ func (o *RegistController) Post() {
 
 	//是否找到验证码
 	cpatcha, ok := Login.VerifyInfo[reqRegist.Flag]
+
 	if !ok {
 		respLogin.State = 1
 		//beego.Debug("验证码超时或无效")
@@ -72,7 +74,11 @@ func (o *RegistController) Post() {
 	delete(Login.VerifyInfo, reqRegist.Flag)
 
 	//验证码是否输入错误
-	if strings.ToLower(reqRegist.Captcha) != strings.ToLower(cpatcha) {
+	verifyResult := base64Captcha.VerifyCaptcha(cpatcha, reqRegist.Captcha) //传入之前生成后存的验证码和前台输入的验证码，这个方法返回bool
+	if verifyResult {
+		beego.Debug("------------------------------验证码正确-------------------------")
+	} else {
+		beego.Debug("------------------------------验证码错误-------------------------")
 		respLogin.State = 2
 		msg, err := json.Marshal(respLogin)
 		if err != nil {
@@ -82,6 +88,17 @@ func (o *RegistController) Post() {
 		o.Ctx.Output.Body(msg)
 		return
 	}
+	beego.Debug("验证码正确继续运行")
+	//if strings.ToLower(reqRegist.Captcha) != strings.ToLower(cpatcha) {
+	//	respLogin.State = 2
+	//	msg, err := json.Marshal(respLogin)
+	//	if err != nil {
+	//		beego.Error("--- Marshal Error : ", err)
+	//		return
+	//	}
+	//	o.Ctx.Output.Body(msg)
+	//	return
+	//}
 	//这里要去数据库中查询看是否被注册过了
 	accountInfo := DbHandle.FindAccountInfo(reqRegist.AccountName)
 	//用户已经注册

@@ -30,6 +30,12 @@ func Instance() *Ctrl {
 	return sInstance
 }
 
+//---去ctrl服注册需要的参数，这里封装成struct，参数为 暗号和服务器功能
+type ReqSrvRegist struct {
+	Cipher  []byte
+	SrvFunc string
+}
+
 func (o *Ctrl) Init() error {
 	//去Ctrl 服注册,获取密钥信息
 	req := ReqSrvRegist{} // ---声明空的ReqSrvRegist结构体，然后赋值
@@ -37,7 +43,6 @@ func (o *Ctrl) Init() error {
 	req.SrvFunc = conf.SrvFunc
 
 	data, err := json.Marshal(req)//---解析封装的注册服务器的密钥参数，序列化json
-	beego.Debug(data,"****************************************************************************")
 	if err != nil {
 		return err
 	}
@@ -130,11 +135,6 @@ func (o *Ctrl) Init() error {
 	return nil
 }
 
-//---去ctrl服注册需要的参数，这里封装成struct，参数为 暗号和服务器功能
-type ReqSrvRegist struct {
-	Cipher  []byte
-	SrvFunc string
-}
 
 type RespSrvRegist struct {
 	AesPuk string //aes 公钥

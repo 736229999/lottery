@@ -34,10 +34,9 @@ func (o *DbMgr) Init() error {
 	// 	beego.Emergency(err)
 	// 	return
 	// }
-
 	if ctrl.SelfSrv.Type == 0 { //试玩服务器
 		beego.Info("--- Login Server  : Trial !")
-	} else if ctrl.SelfSrv.Type == 1 {
+	} else if ctrl.SelfSrv.Type == 1 { //正式服务器
 		beego.Info("--- Login Server  : Formal !")
 	} else {
 		beego.Error("Login Server Type Error !")
@@ -47,30 +46,30 @@ func (o *DbMgr) Init() error {
 	//	beego.Info("------------------- 本服务器是 试玩服务器 ！---------------------")
 	//连接试玩服数据库
 	var dburl = ctrl.DbSrv.Ip + ":" + ctrl.DbSrv.Port
-
-	dialInfo := &mgo.DialInfo{
-		Addrs:    []string{dburl},
-		Timeout:  time.Second * 5,
-		Database: LoginDbName,
-		Username: DbUserName,
-		Password: DbPwd,
-	}
-	err := o.Connect(dialInfo, ctrl.DbSrv.Ip, LoginDbName, AccountInfoCollection)
-	if err != nil {
-		return err
-	}
+	//dialInfo := &mgo.DialInfo{
+	//	Addrs:    []string{dburl},
+	//	Timeout:  time.Second * 5,
+	//	Database: LoginDbName,
+	//	Username: DbUserName,
+	//	Password: DbPwd,
+	//}
+	//err := o.Connect(dialInfo, ctrl.DbSrv.Ip, LoginDbName, AccountInfoCollection)
+	//if err != nil {
+	//	return err
+	//}
 	// } else {
 	// 	beego.Info("------------------- 本服务器是 正式服务器 ！！ ！ ---------------------")
 	// 	//连接正式服数据库
-	// 	dialInfo_1 := &mgo.DialInfo{
-	// 		Addrs:    []string{FormalDbIp},
-	// 		Timeout:  time.Second * 5,
-	// 		Database: LoginDbName,
-	// 		Username: DbUserName,
-	// 		Password: DbPwd,
-	// 	}
-	// 	o.Connect(dialInfo_1, FormalDbIp, LoginDbName, AccountInfoCollection)
-	// }
+	 	dialInfo_1 := &mgo.DialInfo{
+	 		//Addrs:    []string{FormalDbIp},
+	 		Addrs:    []string{dburl},
+	 		Timeout:  time.Second * 5,
+	 		Database: LoginDbName,
+	 		Username: DbUserName,
+	 		Password: DbPwd,
+	 	}
+	 	o.Connect(dialInfo_1, FormalDbIp, LoginDbName, AccountInfoCollection)
+	 //}
 
 	beego.Info("--- Init DB Mgr Done !  ")
 	return nil
@@ -84,6 +83,7 @@ func (o *DbMgr) Connect(dialInfo *mgo.DialInfo, serverName string, dbName string
 	//建立连接 Dial
 	dbService.Session, err = mgo.DialWithInfo(dialInfo)
 	if err != nil {
+		beego.Debug("err ----------- ",err)
 		return err
 	}
 
@@ -93,13 +93,13 @@ func (o *DbMgr) Connect(dialInfo *mgo.DialInfo, serverName string, dbName string
 
 	if err != nil {
 		defer dbService.Session.Close()
+		beego.Debug("err ----------- ",err)
 		return err
 	}
 
 	dbService.DbMap[dbName] = dbService.Session.DB(dbName)
 
 	dbService.CollectionMap[collectionName] = dbService.DbMap[dbName].C(collectionName)
-
 	o.DbServiceMap[serverName] = dbService
 
 	beego.Info("--- DbMgr Connect DB Done : ", dialInfo.Addrs, " - ", dbName, " - ", collectionName, "!")

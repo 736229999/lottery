@@ -4,7 +4,7 @@ package Login
 //客户端请求：验证码
 type ReqCaptcha struct {
 	Flag string `json:"flag"`
-	//Platform int    `json:"platform"`
+	Platform int    `json:"platform"`
 }
 
 //客户端请求：注册

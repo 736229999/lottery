@@ -38,6 +38,7 @@ import (
 	"github.com/astaxie/beego"
 )
 
+
 func main() {
 	//设定随机数种子
 	rand.Seed(time.Now().Unix())
@@ -56,7 +57,7 @@ func main() {
 		return
 	}
 
-	//3.初始化数据库
+	//3.初始化数据库	 ---验证是试玩服务器还是正式服务器，然后连接数据库
 	err = dbmgr.Instance().Init()
 	if err != nil {
 		beego.Error(err)
@@ -64,7 +65,6 @@ func main() {
 	}
 	//初始化数据库处理类；
 	DbHandle.Init()
-
 	beego.Info("--- Login server initialization done !")
 
 	if beego.BConfig.RunMode == "dev" {
@@ -73,3 +73,4 @@ func main() {
 	}
 	beego.Run()
 }
+

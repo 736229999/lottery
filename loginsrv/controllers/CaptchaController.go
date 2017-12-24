@@ -17,7 +17,6 @@ type CaptchaController struct {
 }
 
 func (o *CaptchaController) Post() {
-	//beego.Debug("adsfadfasd")
 	reqCaptcha := &Login.ReqCaptcha{}
 	//respCaptcha := &Login.RespCommon{}
 
@@ -29,9 +28,10 @@ func (o *CaptchaController) Post() {
 	}
 
 	//将验证码保持到输出流，可以是文件或HTTP流等
-	captchaBuff := bytes.NewBuffer(nil)
+	captchaBuff := bytes.NewBuffer( nil)
+
 	//获取验证码；
-	font := Login.CreateCaptcha(captchaBuff, gocaptcha.ImageFormatJpeg)
+	font := Login.CreateCaptcha(captchaBuff, gocaptcha.ImageFormatJpeg) // ---生成验证码放入文本流中，返回生成的验证码字符
 	if font == "" {
 		beego.Emergency("-------------------------- 生成验证码错误 !--------------------------")
 		return
@@ -43,15 +43,14 @@ func (o *CaptchaController) Post() {
 	if err != nil {
 		return
 	}
-
-	o.Ctx.Output.Body(body)
+	o.Ctx.Output.Body(body) //向客户端返回
 
 	Login.VerifyInfo[reqCaptcha.Flag] = font
 
 	//验证码计时，超过一分钟验证码失效
 	timer := time.NewTimer(time.Second * 60)
 
-	//这个地方暂时这样做，分携程来处理倒计时是不可取的应该由一个携程来总负责，先完成功能再说了(正确的方式是写计时器,依次执行函数回调)
+	//这个地方暂时这样做，分协程来处理倒计时是不可取的应该由一个协程来总负责，先完成功能再说了(正确的方式是写计时器,依次执行函数回调)
 	go func(flag string, font string) {
 		<-timer.C
 		if f, ok := Login.VerifyInfo[flag]; ok {

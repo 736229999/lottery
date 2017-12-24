@@ -8,11 +8,26 @@ import (
 	"github.com/astaxie/beego"
 )
 
+type ReqSrvRegist struct {
+	Cipher  []byte
+	SrvFunc string
+}
+
+type RespSrvRegist struct {
+	AesPuk string
+	AesPrk string
+}
+
 //现在由于是短连接只能验证 这个来源服务器是否再允许的列表中,等完成功能后,将服务器之间改为长连接,这样可以准确的记录已注册服务器的个数,和达到服务器注册功能
 type SrvRegist struct {
 	beego.Controller
 }
 
+/**
+	注册消息
+	1、验证来源ip是否正确
+	2、解密
+ */
 func (o *SrvRegist) Post() {
 	//每条来自其他服务器的消息都要验证来源IP是否正确
 	if !srvmgr.Instance().VerifySrv(o.Ctx.Input.IP()) {
@@ -20,7 +35,7 @@ func (o *SrvRegist) Post() {
 		return
 	}
 
-	plaintext, err := encmgr.Instance().RsaDec(o.Ctx.Input.RequestBody)
+	plaintext, err := encmgr.Instance().RsaDec(o.Ctx.Input.RequestBody) //解密传入暗号，这里传的啥·？？ ，plaintext—>明文·？
 	if err != nil {
 		beego.Error(err)
 		return
@@ -69,12 +84,3 @@ func (o *SrvRegist) Post() {
 	}
 }
 
-type ReqSrvRegist struct {
-	Cipher  []byte
-	SrvFunc string
-}
-
-type RespSrvRegist struct {
-	AesPuk string
-	AesPrk string
-}

@@ -1,4 +1,4 @@
-/*
+ /*
 *
 *          ┌─┐       ┌─┐
 *       ┌──┘ ┴───────┘ ┴──┐
@@ -48,7 +48,7 @@ func main() {
 		beego.Error(err)
 		return
 	}
-
+	beego.Debug("初始化ctrl----------------")
 	//2.初始化 ctrl
 	err = ctrl.Instance().Init()
 	if err != nil {

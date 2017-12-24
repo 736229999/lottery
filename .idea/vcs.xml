@@ -2,5 +2,7 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/beego-captcha" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/lottery" vcs="Git" />
   </component>
 </project>

@@ -15,6 +15,7 @@ import (
 var userInfoCollection *mgo.Collection
 
 func Init() {
+
 	//判断改服务器是试玩还是正式服;
 	// serverType, err := beego.AppConfig.Int("ServerType")
 	// if err != nil {
@@ -23,7 +24,7 @@ func Init() {
 	// }
 
 	//if serverType == 0 {
-	userInfoCollection = dbmgr.Instance().DbServiceMap[ctrl.DbSrv.Ip].CollectionMap[dbmgr.AccountInfoCollection]
+	userInfoCollection = dbmgr.Instance().DbServiceMap[ctrl.DbSrv.Ip + ":" + ctrl.DbSrv.Port].CollectionMap[dbmgr.AccountInfoCollection]
 	// } else {
 	// 	userInfoCollection = dbmgr.Instance().DbServiceMap[ctrl.DbSrv.Ip].CollectionMap[dbmgr.AccountInfoCollection]
 	// }
