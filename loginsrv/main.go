@@ -40,6 +40,7 @@ import (
 
 
 func main() {
+	beego.Debug("为什么会报错")
 	//设定随机数种子
 	rand.Seed(time.Now().Unix())
 
