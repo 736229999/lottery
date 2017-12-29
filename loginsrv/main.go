@@ -40,7 +40,6 @@ import (
 
 
 func main() {
-	beego.Debug("李四的代码")
 	//设定随机数种子
 	rand.Seed(time.Now().Unix())
 
