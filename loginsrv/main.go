@@ -44,6 +44,7 @@ func main() {
 	beego.Debug("这是一个新功能")
 	beego.Debug("bug分支")
 	beego.Debug("bra的新功能")
+	beego.Debug("bra 1.0的新功能")
 	//设定随机数种子
 	rand.Seed(time.Now().Unix())
 
