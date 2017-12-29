@@ -41,6 +41,8 @@ import (
 
 func main() {
 	beego.Debug("master的分支")
+	beego.Debug("test分支")
+	beego.Debug("test又又提交了分支")
 	//设定随机数种子
 	rand.Seed(time.Now().Unix())
 
