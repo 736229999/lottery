@@ -42,6 +42,7 @@ import (
 func main() {
 	beego.Debug("李四的代码")
 	beego.Debug("李四又又提交了")
+	beego.Debug("我大李四又又提交了")
 	//设定随机数种子
 	rand.Seed(time.Now().Unix())
 
