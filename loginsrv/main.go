@@ -41,6 +41,11 @@ import (
 
 func main() {
 	beego.Debug("master的分支")
+	beego.Debug("这是一个新功能")
+	beego.Debug("bug分支")
+	beego.Debug("bra的新功能")
+	beego.Debug("再次reset后的修改")
+	beego.Debug("再再次reset到这个版本")
 	//设定随机数种子
 	rand.Seed(time.Now().Unix())
 
